@@ -1,0 +1,15 @@
+/Users/khim/Desktop/FINAL_CODE/bin/Debug/net6.0/FINAL_CODE
+/Users/khim/Desktop/FINAL_CODE/bin/Debug/net6.0/FINAL_CODE.deps.json
+/Users/khim/Desktop/FINAL_CODE/bin/Debug/net6.0/FINAL_CODE.runtimeconfig.json
+/Users/khim/Desktop/FINAL_CODE/bin/Debug/net6.0/FINAL_CODE.dll
+/Users/khim/Desktop/FINAL_CODE/bin/Debug/net6.0/FINAL_CODE.pdb
+/Users/khim/Desktop/FINAL_CODE/obj/Debug/net6.0/FINAL_CODE.csproj.AssemblyReference.cache
+/Users/khim/Desktop/FINAL_CODE/obj/Debug/net6.0/FINAL_CODE.GeneratedMSBuildEditorConfig.editorconfig
+/Users/khim/Desktop/FINAL_CODE/obj/Debug/net6.0/FINAL_CODE.AssemblyInfoInputs.cache
+/Users/khim/Desktop/FINAL_CODE/obj/Debug/net6.0/FINAL_CODE.AssemblyInfo.cs
+/Users/khim/Desktop/FINAL_CODE/obj/Debug/net6.0/FINAL_CODE.csproj.CoreCompileInputs.cache
+/Users/khim/Desktop/FINAL_CODE/obj/Debug/net6.0/FINAL_CODE.dll
+/Users/khim/Desktop/FINAL_CODE/obj/Debug/net6.0/refint/FINAL_CODE.dll
+/Users/khim/Desktop/FINAL_CODE/obj/Debug/net6.0/FINAL_CODE.pdb
+/Users/khim/Desktop/FINAL_CODE/obj/Debug/net6.0/FINAL_CODE.genruntimeconfig.cache
+/Users/khim/Desktop/FINAL_CODE/obj/Debug/net6.0/ref/FINAL_CODE.dll
