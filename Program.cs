@@ -13,12 +13,12 @@ class Program {
     static void Main(string[] args) {
         PreparePersonalListWhenProgramIsLoad();
         PrintMenuScreen();
+
     }
     static void PrintMenuScreen() {
         Console.Clear();
 
         PrintListMenu();
-        InputMenuFromKeyboard();
         PresentMenu();
     }
 
@@ -69,7 +69,7 @@ class Program {
             ShowInputRegistrationScreen();
         } else if (presentMenu == 2) {
 
-        } else if (presentMenu ==3) {
+        } else if (presentMenu == 3) {
             ShowInputLoginScreen();
         }
     }
@@ -80,7 +80,7 @@ class Program {
                  ShowInputRegistrationScreen();
                  break;
             case MainMenu.AllCurrentStudent:
-                 ShowPersons();
+                 ShowCurrentStudent();
                  break;
             case MainMenu.AllStudent:
                  ShowPersons();
@@ -96,6 +96,17 @@ class Program {
         }
     }
 
+    static void ShowCurrentStudent() {
+        Console.WriteLine("   The Current Student Participant   ");
+        Console.WriteLine("*************************************");
+
+        // foreach(PersonList personList in personList) {
+        // Console.WriteLine("{0}", personList);
+        // }
+
+        
+    }
+
     static void ShowPersons() {
         Console.WriteLine("Show Persons");
         Console.WriteLine("************");
@@ -108,7 +119,6 @@ class Program {
         PrintHeaderLogin();
 
         InputEmail();
-        InputPassword();
         
     }
 
@@ -175,7 +185,7 @@ class Program {
         PrintHeaderRegister();
 
         Teacher teacher = new Teacher(InputTitleName(), InputFirstName(), InputLastName(),
-        InputAge(), InputPosition(), InputAllergy(), InputReligion(), InputCarNumber(), InputEmail(), InputPassword());
+        InputAge(), InputPosition(), InputAllergy(), InputReligion(), InputCarNumber(), InputEmail(), InputPassword() );
 
         Program.personList.AddNewPerson(teacher);
         
@@ -183,6 +193,7 @@ class Program {
 
     }
 
+    // static void checkRegister(List<Person) persons, string titleNameCheck, string firstNameCheck, 
  
     static void BackToMainMenu() {
         PrintMainMenuScreen();
@@ -194,78 +205,106 @@ class Program {
 
     static string InputTitleName() {
         Console.Write("Title Name : ");
-
-        return Console.ReadLine();
+        string titleName = Console.ReadLine();
+    
+        return titleName;
     }
-
+    
     static string InputFirstName() {
         Console.Write("First Name : ");
+        string firstName = Console.ReadLine();
 
-        return Console.ReadLine();
+        return firstName;
     }
 
     static string InputLastName() {
         Console.Write("Last Name : ");
+        string lastName = Console.ReadLine();
 
-        return Console.ReadLine();
+        return lastName;
     }
 
     static string InputStudentID() {
         Console.Write("StudentID : ");
+        string studenetID = Console.ReadLine();
 
-        return Console.ReadLine();
+        return studenetID;
     }
 
     static string InputAge() {
         Console.Write("Age : ");
+        string age = Console.ReadLine();
 
-        return Console.ReadLine();
+        return age;
     }
 
     static string InputLevel() {
         Console.Write("Level : ");
+        string level = Console.ReadLine();
 
-        return Console.ReadLine();
+        return level;
     }
     static string InputPosition() {
         Console.Write("Position : ");
+        string position = Console.ReadLine();
 
-        return Console.ReadLine();
+        return position;
     }
 
     static string InputSchool() {
         Console.Write("School : ");
+        string school = Console.ReadLine();
 
-        return Console.ReadLine();
+        return school;
     }
 
     static string InputAllergy() {
         Console.Write("Allergy : ");
+        string allergy = Console.ReadLine();
 
-        return Console.ReadLine();
+        return allergy;
     }
 
     static string InputReligion() {
         Console.Write("Religion : ");
+        string religion = Console.ReadLine();
 
-        return Console.ReadLine();
+        return religion;
     }
 
     static string InputCarNumber() {
-        Console.Write("Car Number : ");
+        Console.Write("Do you bring car withM Y/N : ");
+        string checkCar = Console.ReadLine();
 
-        return Console.ReadLine();
+        if (checkCar == "Y") {
+            Console.Write("Car Number : ");
+            string carNumber = Console.ReadLine();
+        }
+        return null;
     }
 
     static string InputEmail() {
-        Console.Write("Email : ");
+        Console.Write("Are You an admin? Y/N : ");
+        string checkAdmin = Console.ReadLine();
 
-        return Console.ReadLine();
+        if (checkAdmin == "Y") {
+            Console.Write("Email : ");
+            string email = Console.ReadLine();
+
+            return email;
+        }
+        return null;
     }
 
     static string InputPassword() {
-        Console.Write("Password : ");
+        string exitEmail = InputEmail();
+        if (exitEmail != null) {
 
-        return Console.ReadLine();
+            Console.Write("Password : ");
+            string password = Console.ReadLine();
+
+            return password;
+        }
+        return null;
     }
 }
